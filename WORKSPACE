@@ -1,3 +1,7 @@
+load("//:bazel_version.bzl", "bazel_version")
+
+bazel_version(name="bazel_version")
+
 http_archive(
 	name="com_davidstanke_bazelgcbutil",
 	urls=["https://github.com/davidstanke/bazel-gcb-util/archive/v0.1.zip"],
