@@ -3,6 +3,7 @@ java_library (
 	srcs=glob(["src/main/java/com/example/*.java"]),
 	deps=[
 			"@com_davidstanke_bazelgcbutil//:BazelGCBUtil",
+			"@bazel_version//:foo",
 		],
 )
 
@@ -12,6 +13,5 @@ java_test (
 	srcs=["src/test/java/com/example/BazelGCBTest.java"],
 	deps = [
 		":BazelGCB",
-		"@bazel_version//:foo"
 	]
 )
