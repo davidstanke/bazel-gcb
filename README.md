@@ -1,2 +1,2 @@
 # bazel-gcb
-Demo project for Bazel w/ GCB
+Demo project for Bazel with GCB
