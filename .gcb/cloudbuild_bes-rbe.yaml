@@ -7,7 +7,8 @@ steps:
     '--config=remote',
     '--config=results',
     '--remote_instance_name=projects/btd-pm',
-    '--project_id=btd-pm'
+    '--project_id=btd-pm',
+    '--verbose_failures=true',
   ]
 
 
