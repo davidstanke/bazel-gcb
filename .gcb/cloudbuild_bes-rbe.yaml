@@ -1,0 +1,13 @@
+steps:
+- name: gcr.io/cloud-builders/bazel
+  args: [
+    '--bazelrc=tools/bazel.rc',
+    'test',
+    '//...',
+    '--config=remote',
+    '--config=results',
+    '--remote_instance_name=projects/btd-pm',
+    '--project_id=btd-pm'
+  ]
+
+
